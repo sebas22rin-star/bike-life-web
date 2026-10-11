@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKE-LIFE | Kits Desvaradores de Emergencia</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#2563eb',
+                            bluelight: '#60a5fa',
+                            bluedark: '#1d4ed8',
+                            dark: '#0f172a',
+                            slate: '#1e293b',
+                            light: '#f8fafc',
+                            accent: '#38bdf8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-heading { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Top Bar Contacto -->
+    <div class="bg-brand-dark text-slate-300 py-2 px-4 text-xs md:text-sm flex justify-between items-center border-b border-slate-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-2"><i class="fas fa-shield-alt text-brand-blue"></i> Kits de Emergencia en Ruta</span>
+                <span class="hidden sm:inline text-slate-500">|</span>
+                <span class="hidden sm:inline">Para Ciclistas, Patinetas y Skaters</span>
+            </div>
+            <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20quisiera%20pedir%20información" target="_blank" class="flex items-center gap-2 text-green-400 font-semibold hover:text-green-300 transition-colors">
+                <i class="fab fa-whatsapp"></i> WhatsApp: 305 339 6448
+            </a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="bg-brand-dark text-white sticky top-0 z-50 shadow-xl border-b border-slate-800">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- Logo SVG Identico -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 bg-white rounded-lg p-1.5 flex items-center justify-center shadow-lg">
+                    <svg viewBox="0 0 300 240" class="w-full h-full text-slate-900" fill="currentColor">
+                        <path d="M 210,70 A 55,55 0 0 1 265,125 A 55,55 0 0 1 210,180" fill="none" stroke="currentColor" stroke-width="12" stroke-dasharray="16,8"/>
+                        <path d="M 140,25 L 175,50 L 205,30 L 225,55 L 180,68 Z" fill="currentColor"/>
+                        <text x="15" y="105" font-family="'Impact', 'Arial Black', sans-serif" font-size="75" font-weight="900" font-style="italic" fill="currentColor">BIKE</text>
+                        <text x="50" y="175" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" font-style="italic" fill="currentColor">LIFE</text>
+                        <line x1="20" y1="188" x2="250" y2="188" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-heading font-black text-xl tracking-wider text-white block leading-none">BIKE<span class="text-brand-blue">-LIFE</span></span>
+                    <span class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">Rodar Seguro Siempre</span>
+                </div>
+            </a>
+
+            <!-- Navegación Escritorio -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+                <a href="#nosotros" class="hover:text-brand-bluelight transition-colors">Nosotros</a>
+                <a href="#catalogo" class="hover:text-brand-bluelight transition-colors">Kits Cilíndricos</a>
+                <a href="#ventajas" class="hover:text-brand-bluelight transition-colors">¿Por qué Cilindro?</a>
+                <a href="#tutorial" class="hover:text-brand-bluelight transition-colors">Guía Rápida</a>
+            </nav>
+
+            <!-- Botón Pedir -->
+            <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20quiero%20comprar%20un%20kit%20de%20emergencia" target="_blank" class="bg-brand-blue hover:bg-brand-bluedark text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-500/30 flex items-center gap-2">
+                <i class="fab fa-whatsapp text-lg"></i> 305 339 6448
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-brand-dark via-slate-900 to-brand-slate text-white py-16 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#2563eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            
+            <div class="space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 bg-blue-900/60 border border-blue-500/30 px-4 py-1.5 rounded-full text-brand-accent text-xs font-bold uppercase tracking-wider">
+                    <i class="fas fa-bolt"></i> Resuelve cualquier imprevisto en la vía
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-black font-heading leading-tight">
+                    KITS DE EMERGENCIA <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-bluelight to-blue-300">
+                        BICICLETA, PATINETA Y SKATE
+                    </span>
+                </h1>
+                
+                <p class="text-slate-300 text-lg max-w-xl font-light">
+                    Soluciones desvaradoras en empaques cilíndricos para llevar en tu portacaramañola o maleta. Rodar seguro en cualquier terreno.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                    <a href="#catalogo" class="bg-brand-blue hover:bg-brand-bluedark text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-blue-600/30 transition-all text-center flex items-center justify-center gap-3">
+                        <i class="fas fa-shopping-bag"></i> Ver los 2 Kits Disponibles
+                    </a>
+                    <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20deseo%20asesoria%20para%20elegir%20mi%20kit" target="_blank" class="border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-semibold px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-green-400"></i> Contactar: 305 339 6448
+                    </a>
+                </div>
+
+                <!-- Badges de confianza -->
+                <div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-brand-bluelight"><i class="fas fa-bicycle"></i> + <i class="fas fa-scooter"></i></div>
+                        <div class="text-xs text-slate-400 font-medium">Bicis, Scooters & Skate</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-brand-bluelight">100%</div>
+                        <div class="text-xs text-slate-400 font-medium">Portátil & Impermeable</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-brand-bluelight">Envío</div>
+                        <div class="text-xs text-slate-400 font-medium">Nacional Colombia</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ilustración Cilíndrica -->
+            <div class="flex justify-center">
+                <div class="relative group max-w-sm">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-blue to-cyan-400 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                    <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-6 text-center shadow-2xl">
+                        <div class="w-48 h-80 mx-auto relative flex flex-col items-center justify-between py-4">
+                            <div class="w-40 h-10 bg-slate-800 border-2 border-slate-700 rounded-t-2xl flex items-center justify-center shadow-inner">
+                                <div class="w-16 h-1.5 bg-brand-blue rounded-full"></div>
+                            </div>
+                            <div class="w-40 h-64 bg-gradient-to-b from-slate-900 via-brand-dark to-slate-900 border-x-2 border-b-2 border-slate-700 rounded-b-3xl flex flex-col items-center justify-center p-4 relative overflow-hidden shadow-2xl">
+                                <div class="w-20 h-20 bg-white rounded-xl p-2 shadow-xl mb-3 flex items-center justify-center">
+                                    <svg viewBox="0 0 300 240" class="w-full h-full text-slate-900" fill="currentColor">
+                                        <text x="15" y="105" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" font-style="italic">BIKE</text>
+                                        <text x="50" y="175" font-family="'Impact', 'Arial Black', sans-serif" font-size="85" font-weight="900" font-style="italic">LIFE</text>
+                                    </svg>
+                                </div>
+                                <span class="text-xs font-bold tracking-widest uppercase text-brand-accent">EMERGENCY KIT</span>
+                                <span class="text-[10px] text-slate-400">Edición Cilíndrica Portátil</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-400 mt-2 font-medium">Empaque formato caramañola para portatermo de bici o patineta</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección Misión, Visión y Filosofía -->
+    <section id="nosotros" class="py-16 bg-white border-b border-slate-200">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12">
+                <span class="bg-blue-100 text-brand-blue text-xs font-bold uppercase px-4 py-1.5 rounded-full tracking-wider">
+                    Nuestra Identidad
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold font-heading text-slate-900 mt-3">
+                    Misión, Visión y Filosofía BIKE-LIFE
+                </h2>
+            </div>
+
+            <!-- Filosofía Destacada -->
+            <div class="bg-gradient-to-r from-brand-dark to-slate-900 text-white p-8 md:p-10 rounded-3xl shadow-xl mb-8 relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 text-slate-800/40 text-9xl font-black select-none pointer-events-none">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="text-brand-accent text-xs font-bold uppercase tracking-widest bg-blue-900/80 border border-blue-500/30 px-3 py-1 rounded-full">
+                        Filosofía Corporativa
+                    </span>
+                    <h3 class="text-2xl font-bold font-heading mt-3 mb-4">Lo que creemos y defendemos</h3>
+                    <p class="text-slate-200 text-lg md:text-xl font-medium leading-relaxed italic">
+                        "BIKE-LIFE es una empresa que cree en la seguridad y la integridad de los apasionados por las bicicletas y patinetas de cualquier edad, por eso queremos apoyarlos a seguir adelante sin que ningún imprevisto los detenga."
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Misión -->
+                <div class="bg-brand-light border-t-4 border-brand-blue p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center mb-4 text-xl">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Nuestra Misión</h3>
+                        <p class="text-slate-700 font-medium leading-relaxed italic">
+                            "BIKE-LIFE es una empresa que se encarga de vender kits de emergencia en casos de imprevisto para rodar seguro ya sea en bicicleta o patineta."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Visión -->
+                <div class="bg-brand-light border-t-4 border-brand-bluelight p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-brand-bluelight rounded-xl flex items-center justify-center mb-4 text-xl">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Nuestra Visión</h3>
+                        <p class="text-slate-700 font-medium leading-relaxed italic">
+                            "De aquí a 5 años ser reconocidos por ciclistas y bicicleterías como el mayor distribuidor de kits desvaradores de ciclistas y skaters."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Kits Cilíndricos -->
+    <section id="catalogo" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-blue text-xs font-bold uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">Catálogo Oficial</span>
+                <h2 class="text-3xl md:text-5xl font-black font-heading text-slate-900 mt-3">
+                    Nuestros Kits Desvaradores
+                </h2>
+                <p class="text-slate-600 mt-4 text-base">
+                    Diseñados en cajas cilíndricas ultra-resistentes para encajar en cualquier porta-botellas o guardar fácilmente en tu maleta.
+                </p>
+            </div>
+
+            <!-- Grilla de los 2 Kits -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- KIT 1: $80.000 COP -->
+                <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="bg-slate-900 text-white p-6 relative">
+                            <span class="bg-brand-blue text-white text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider">
+                                Kit Básico Urbano
+                            </span>
+                            <h3 class="text-2xl font-bold font-heading mt-3">Kit Bikelife Express Cilíndrico</h3>
+                            <p class="text-slate-400 text-xs mt-1">Ideal para ciudad, ruta corta, patinetas y skate</p>
+                            
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="text-4xl font-black text-brand-bluelight">$80.000</span>
+                                <span class="text-xs text-slate-400">COP</span>
+                            </div>
+                        </div>
+
+                        <!-- Ilustración Kit $80.000 -->
+                        <div class="bg-blue-50/50 p-8 flex justify-center items-center border-b border-slate-100">
+                            <div class="w-32 h-56 bg-slate-800 rounded-2xl border-4 border-slate-700 flex flex-col items-center justify-between p-3 shadow-lg relative">
+                                <div class="w-full h-4 bg-brand-blue rounded-t-lg"></div>
+                                <div class="w-14 h-14 bg-white rounded-lg p-1.5 shadow-md flex items-center justify-center my-auto">
+                                    <svg viewBox="0 0 300 240" class="w-full h-full text-slate-900" fill="currentColor">
+                                        <text x="15" y="105" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" font-style="italic">BIKE</text>
+                                        <text x="50" y="175" font-family="'Impact', 'Arial Black', sans-serif" font-size="85" font-weight="900" font-style="italic">LIFE</text>
+                                    </svg>
+                                </div>
+                                <span class="text-[10px] font-bold text-white bg-slate-900 px-2 py-0.5 rounded">EXPRESS</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider flex items-center gap-2">
+                                <i class="fas fa-box-open text-brand-blue"></i> ¿Qué incluye el estuche cilíndrico?
+                            </h4>
+                            <ul class="space-y-2 text-slate-600 text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Multitool 10 en 1:</strong> Llaves Allen (2, 2.5, 3, 4, 5, 6, 8mm), Torx T25 y destornilladores.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>3 Palancas Desmontables:</strong> Para retirar la llanta sin rayar la manzana.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Kit de 8 Parches Autoadhesivos:</strong> Lija metálica + solución de pegado rápido.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Medidor de Presión Compacto:</strong> Compatible con válvulas Presta y Schrader.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Envase Cilíndrico Rígido:</strong> Encaja en el porta-botellas.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20quiero%20comprar%20el%20Kit%20Express%20Cilíndrico%20de%20$80.000%20COP" target="_blank" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-center">
+                            <i class="fab fa-whatsapp text-xl"></i> Pedir por WhatsApp ($80.000 COP)
+                        </a>
+                    </div>
+                </div>
+
+                <!-- KIT 2: $120.000 COP -->
+                <div class="bg-white rounded-3xl overflow-hidden border-2 border-brand-blue shadow-2xl transition-all duration-300 flex flex-col justify-between relative">
+                    <div class="absolute top-0 right-0 bg-brand-blue text-white font-bold text-[10px] uppercase px-4 py-1.5 rounded-bl-xl tracking-wider">
+                        Recomendado Pro
+                    </div>
+                    <div>
+                        <div class="bg-gradient-to-br from-slate-900 via-brand-dark to-slate-900 text-white p-6 relative">
+                            <span class="bg-brand-bluelight text-slate-900 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wider">
+                                Kit Pro Trail & Tubeless
+                            </span>
+                            <h3 class="text-2xl font-bold font-heading mt-3">Kit Bikelife Pro Cilíndrico</h3>
+                            <p class="text-slate-300 text-xs mt-1">Para MTB, travesías largas, e-scooters y talleres de bicicleterías</p>
+                            
+                            <div class="mt-4 flex items-baseline gap-2">
+                                <span class="text-4xl font-black text-brand-bluelight">$120.000</span>
+                                <span class="text-xs text-slate-400">COP</span>
+                            </div>
+                        </div>
+
+                        <!-- Ilustración Kit $120.000 -->
+                        <div class="bg-blue-50/50 p-8 flex justify-center items-center border-b border-slate-100">
+                            <div class="w-32 h-56 bg-slate-900 rounded-2xl border-4 border-brand-blue flex flex-col items-center justify-between p-3 shadow-xl relative">
+                                <div class="w-full h-4 bg-brand-bluelight rounded-t-lg"></div>
+                                <div class="w-14 h-14 bg-white rounded-lg p-1.5 shadow-md flex items-center justify-center my-auto">
+                                    <svg viewBox="0 0 300 240" class="w-full h-full text-slate-900" fill="currentColor">
+                                        <text x="15" y="105" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" font-style="italic">BIKE</text>
+                                        <text x="50" y="175" font-family="'Impact', 'Arial Black', sans-serif" font-size="85" font-weight="900" font-style="italic">LIFE</text>
+                                    </svg>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-900 bg-brand-bluelight px-2 py-0.5 rounded">PRO TRAIL</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <h4 class="font-bold text-slate-900 text-sm uppercase tracking-wider flex items-center gap-2">
+                                <i class="fas fa-box-open text-brand-blue"></i> ¿Qué incluye la Cápsula Pro?
+                            </h4>
+                            <ul class="space-y-2 text-slate-600 text-sm">
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Multitool 16 en 1 con Tronchacadenas:</strong> Incluye cortador de cadena integrado.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Sistema Reparador Tubeless:</strong> Punzón aplicador + 10 mechas de caucho vulcanizado.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Inflador Regulador de CO2:</strong> Válvula de rosca + funda térmica protectora.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Eslabón Rápido PowerLink:</strong> Para reparación inmediata de cadena rota.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                    <span><strong>Contenedor Cilíndrico Semi-Rígido:</strong> Resistente al barro e impermeable.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 border-t border-slate-100">
+                        <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20quiero%20comprar%20el%20Kit%20Pro%20Cilíndrico%20de%20$120.000%20COP" target="_blank" class="w-full bg-brand-blue hover:bg-brand-bluedark text-white font-bold py-3.5 px-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-2 text-center">
+                            <i class="fab fa-whatsapp text-xl"></i> Pedir por WhatsApp ($120.000 COP)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ¿Por qué Empaque Cilíndrico? -->
+    <section id="ventajas" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-heading text-slate-900">¿Por qué elegimos Cajas Cilíndricas?</h2>
+                <p class="text-slate-600 mt-2">Ventajas del diseño de almacenamiento de BIKE-LIFE</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Encaje Perfecto</h3>
+                    <p class="text-slate-600 text-sm">Encaja directamente en el porta-caramañola de tu bicicleta o patineta sin estorbar al pedalear.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Protección Total</h3>
+                    <p class="text-slate-600 text-sm">Resistente al agua, barro y caídas. Tus herramientas no se oxidan ni se mojan en el camino.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Cero Vibraciones</h3>
+                    <p class="text-slate-600 text-sm">Diseñado para que las herramientas queden compactas y no generen ruidos ni choques mientras ruedas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guía Rápida -->
+    <section id="tutorial" class="py-16 bg-slate-900 text-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <span class="text-brand-accent text-xs font-bold uppercase tracking-wider">Aprende a Desvararte</span>
+            <h2 class="text-3xl font-bold font-heading mt-2 mb-8">Guía de Emergencia en Vía</h2>
+
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <span class="w-8 h-8 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold mb-4">1</span>
+                    <h3 class="font-bold text-lg mb-2">Detecta el escape</h3>
+                    <p class="text-slate-300 text-sm">Usa la herramienta del kit para retirar el objeto punzante si la llanta perdió aire.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <span class="w-8 h-8 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold mb-4">2</span>
+                    <h3 class="font-bold text-lg mb-2">Aplica Parche o Mecha</h3>
+                    <p class="text-slate-300 text-sm">Inserta la mecha tubeless o coloca el parche de pegado rápido en la cámara interna.</p>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <span class="w-8 h-8 bg-brand-blue text-white rounded-full flex items-center justify-center font-bold mb-4">3</span>
+                    <h3 class="font-bold text-lg mb-2">Infla y Continúa</h3>
+                    <p class="text-slate-300 text-sm">Usa el inflador de CO2 o bomba manual para recuperar la presión y seguir tu ruta seguro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800 mt-auto">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-white rounded p-1 flex items-center justify-center">
+                        <svg viewBox="0 0 300 240" class="w-full h-full text-slate-900" fill="currentColor">
+                            <text x="15" y="105" font-family="'Impact', 'Arial Black', sans-serif" font-size="80" font-weight="900" font-style="italic">BIKE</text>
+                            <text x="50" y="175" font-family="'Impact', 'Arial Black', sans-serif" font-size="85" font-weight="900" font-style="italic">LIFE</text>
+                        </svg>
+                    </div>
+                    <span class="font-heading font-bold text-xl text-white">BIKE-LIFE</span>
+                </div>
+                <p class="text-xs leading-relaxed">
+                    Venta y distribución de kits desvaradores de emergencia en formato cilíndrico para bicicletas, patinetas y skaters.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4">Contacto Directo & Distribución</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-green-400"></i>
+                        <span>WhatsApp: <strong>305 339 6448</strong></span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-store text-brand-blue"></i>
+                        <span>Ventas al detal y para Bicicleterías</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold text-sm mb-4">Lema Corporativo</h4>
+                <p class="text-xs italic bg-slate-800 p-4 rounded-xl border border-slate-700 text-slate-300">
+                    "Para rodar seguro ya sea en bicicleta o patineta."
+                </p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs">
+            <p>&copy; 2026 BIKE-LIFE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573053396448?text=Hola%20BIKE-LIFE,%20me%20gustaría%20ordenar%20un%20kit" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition-transform hover:scale-110">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+</body>
+</html>
